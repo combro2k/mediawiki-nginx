@@ -2,7 +2,7 @@
 #
 # Version 1.0
 FROM ubuntu:14.04
-MAINTAINER Matt Renner <matt@rennernz.com>
+MAINTAINER Martijn van Maurik <martijn@vmaurik.nl>
 
 # Ensure UTF-8
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
