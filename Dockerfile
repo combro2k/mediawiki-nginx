@@ -21,6 +21,7 @@ RUN sed -i -e 's/^listen =.*/listen = \/var\/run\/php5-fpm.sock/' /etc/php5/fpm/
 
 # Remove the old hello world app and grab Mediawiki source
 RUN git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git /data
+RUN chown -R www-data:www-data /data
 
 # Create the section for persistent files
 RUN mkdir /var/lib/mediawiki
