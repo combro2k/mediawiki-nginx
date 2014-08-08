@@ -21,6 +21,9 @@ ADD nginx.conf /etc/nginx/nginx.conf
 ADD nginx-site.conf /etc/nginx/sites-enabled/default
 RUN sed -i -e 's/^listen =.*/listen = \/var\/run\/php5-fpm.sock/' /etc/php5/fpm/pool.d/www.conf
 
+RUN mkdir -p /etc/nginx/scripts
+ADD proxy_client_ip.php /etc/nginx/scripts/proxy_client_ip.php
+
 # Remove the old hello world app and grab Mediawiki source
 RUN git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git /data
 RUN chown -R www-data:www-data /data
