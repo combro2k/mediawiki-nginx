@@ -2,7 +2,7 @@
 #
 # Version 1.0
 FROM ubuntu:14.04
-MAINTAINER Martijn van Maurik <martijn@vmaurik.nl>
+MAINTAINER Martijn van Maurik <docker@vmaurik.nl>
 
 # Ensure UTF-8
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
