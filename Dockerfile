@@ -1,7 +1,7 @@
 # Mediawiki-Nginx
 #
 # Version 1.0
-FROM ubuntu:14.04
+FROM ubuntu-debootstrap:14.04
 MAINTAINER Martijn van Maurik <docker@vmaurik.nl>
 
 # Ensure UTF-8
